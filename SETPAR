@@ -1,0 +1,60 @@
+ &nmfin cfm='/home/pdang/LBM_install/data/frc/frc.mat',
+        cfg='/home/pdang/LBM_install/data/frc/frc.grd'
+        fact=1.0,1.0,1.0,1.0,1.0
+ &end
+
+ &nmfgt cfs='/home/pdang/LBM_install/data/out/psi',
+        cfc='/home/pdang/LBM_install/data/out/chi',
+        cfu='/home/pdang/LBM_install/data/out/u',
+        cfv='/home/pdang/LBM_install/data/out/v',
+        cfw='/home/pdang/LBM_install/data/out/w',
+        cft='/home/pdang/LBM_install/data/out/t',
+        cfz='/home/pdang/LBM_install/data/out/z',
+        cfp='/home/pdang/LBM_install/data/out/p',
+        cfo='/home/pdang/LBM_install/data/linear.t21l20.grd', 
+        fact=1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,
+        opl=f,
+ &end
+
+ &nmbs  cbs0='/home/pdang/LBM_install/bs/gt3/ncepwin.t21l20',
+        cbs='/home/pdang/LBM_install/bs/grads/ncepwin.t21l20.grd'
+ &end
+
+ &nmncp cncep='/home/pdang/LBM_install/bs/ncep/ncep.clim.y58-97.t21.grd',
+        cncep2='/home/pdang/LBM_install/bs/ncep/ncep.clim.y58-97.ps.t21.grd',
+        calt='/home/pdang/LBM_install/bs/gt3/grz.t21',
+        kmo=12, navg=3, ozm=f, osw=f, ousez=t
+ &end
+
+ &nmecm cecm='/home/hiro/ln_solver/bs/ecmwf/ERA40.clim.t21.grd',
+        calt='/home/hiro/ln_solver/bs/gt3/grz.t21',
+        kmo=12, navg=3, ozm=f, osw=f
+ &end
+
+ &nmvar ovor=f, odiv=f, otmp=t, ops=f, osph=f
+ &end
+
+ &nmhpr khpr=1,
+        hamp=1.,
+        xdil=40.,
+        ydil=12.,
+        xcnt=210.,
+        ycnt=0.
+ &end
+
+ &nmvpr kvpr=2,
+        vamp=8,
+        vdil=20.,
+        vcnt=0.45
+ &end
+
+ &nmred cdr='/home/pdang/LBM_install/matrix.moi',
+        cfo='/home/pdang/LBM_install/matrix.moi/mat/MAT.t21l11m6.ncepannzm.moi.tmp.dat'
+ &end
+
+ &nmall owall=t
+ &end
+
+ &nmcls oclassic=t
+ &end
+
